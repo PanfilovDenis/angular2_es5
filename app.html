@@ -1,0 +1,15 @@
+<h1>My First Angular 2 ES5 App</h1>
+{{test}}
+{{names}}
+
+<ul>
+  <li *ng-for="#name of names">
+    {{name}}
+  </li>
+</ul>
+
+<p *ng-if="names.length > 3">You have many friends!</p>
+
+<input #myname (keyup)="onKeyUp($event, myname.value)">
+
+<child></child>
